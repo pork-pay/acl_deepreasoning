@@ -1,0 +1,6 @@
+{
+  "id": "medxpert-ecg-MM-19",
+  "image_path": "MM-19-a.jpeg",
+  "question": "Answer the following multiple choice question. The last line of your response should be of the following format: 'Answer: $LETTER' (without quotes) where LETTER is one of ABCDE. Think step by step before answering. \nA 31-year-old male patient undergoes an electrocardiogram screening prior to starting an intensive exercise regimen. The patient has no cardiac history, denies recent episodes of palpitations, syncope, or chest pain, and reports no family history of early-onset heart disease or sudden cardiac death. His physical examination reveals no abnormalities. Based on the ECG findings, what is the most appropriate next step in his evaluation?\nAnswer Choices: (A) Holter examination (B) No further testing (C) Echocardiogram (D) Invasive electrophysiologic study (E) Exercise stress test\nA. Holter examination\nB. No further testing\nC. Echocardiogram\nD. Invasive electrophysiologic study\nE. Exercise stress test",
+  "gold_answer": "E"
+}
