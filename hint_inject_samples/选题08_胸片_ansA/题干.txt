@@ -1,0 +1,7 @@
+A 67-year-old man is recovering in the surgical intensive care unit following an esophagectomy. A portable anteroposterior chest radiograph (Figure A) is obtained to evaluate his postoperative status. The patient has a right-sided chest tube in place. Based on the radiographic findings, which of the following is the most likely cause of the bilateral lower lung opacities?Options: 
+A. Pleural effusion
+B. Pulmonary embolism
+C. Emphysema
+D. Cavitary tuberculosis
+E. Tension pneumothorax
+Please reason step by step, and put your final answer within \boxed{}.

@@ -1,0 +1,11 @@
+选题号: 31
+类别: 骨折
+来源: medx_0812_img.jsonl 行 2400
+teacher(qwen3.8) box: C
+35B续写答: C
+gpt-5.6 oracle独立重答: C
+三一致: True
+截断 cut_after_unit=10 (共35单元,约28%)
+hint: Before committing, trace the radial head and neck cortices to verify that the horizontal lucency causes true cortical interruption or fragment displacement rather than projectional overlap, then assess whether the radiocapitellar and ulnohumeral relationships are...
+续写reasoning字符: 4541
+图: 31_骨折_ansC.png

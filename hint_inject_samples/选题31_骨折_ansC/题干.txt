@@ -1,0 +1,7 @@
+A 32-year-old patient presents to the emergency department with acute right elbow pain, swelling, and limited range of motion following a fall onto an outstretched hand. An anteroposterior radiograph of the right elbow is obtained (Figure A). What is the most likely diagnosis?Options: 
+A. Normal elbow radiograph
+B. Isolated elbow dislocation
+C. Elbow fracture
+D. Advanced osteoarthritis
+E. Osteochondritis dissecans
+Please reason step by step, and put your final answer within \boxed{}.
