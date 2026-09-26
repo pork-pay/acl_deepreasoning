@@ -1,0 +1,21 @@
+{
+  "samples": 2,
+  "model": "qwen3.8-max",
+  "thinking": true,
+  "all_predictions_match_gold": true,
+  "all_reasoning_nonempty": true,
+  "results": [
+    {
+      "id": "paper_cf_439_pr_prolongation_morphology_preserving",
+      "gold": "C",
+      "prediction": "C",
+      "assistant_characters": 8845
+    },
+    {
+      "id": "paper_cf_774_rr_extension_morphology_preserving",
+      "gold": "B",
+      "prediction": "B",
+      "assistant_characters": 5934
+    }
+  ]
+}

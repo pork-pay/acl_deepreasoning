@@ -1,0 +1,341 @@
+{
+  "case_id": "case_02_rate_slowing",
+  "created_at_utc": "2026-09-24T03:47:40.741693+00:00",
+  "source": {
+    "dataset": "PTB-XL 1.0.3 / PTB-XL-Plus-derived QA",
+    "split": "train",
+    "strat_fold": 5,
+    "ecg_id": 774,
+    "patient_id": "16588",
+    "waveform_record": "<ptbxl_download>/physionet.org/files/ptb-xl/1.0.3/records500/00000/00774_hr",
+    "waveform_sha256": {
+      "hea": "5264c71bd95a1ae4f0b31e30a0ceed23e7403350a21a065f1a500ecd9e1ed0bf",
+      "dat": "84f371feeae22fdd38a5d4a97750e121e706ea2d542f0770d20ca8c3e8b7ceef"
+    },
+    "source_image": "<genecg_source>/Dataset_A_ECGs_without_imperfections/00000/00774_hr_1R.png",
+    "source_image_sha256": "8c3e0afcab5089a6e93ca17099ceb2218ac17580a27171fb7b6861746c9d4416",
+    "question_id": "distill_q_774"
+  },
+  "selection_evidence": {
+    "normal_catalog_entry": {
+      "source_id": "wf_01_00774",
+      "target_number": 1,
+      "target": "Normal",
+      "image": "<output_root>/train/data/ecg/runs/waveform_complex_mcq_sources_v1_20260920/images/01_Normal/mother_00774.png",
+      "image_sha256": "a338f57a75ef173c96fd85d2ea561877536ba8a639f1cbdc8169b1e512ead9a8",
+      "mother_ecg_id": "774",
+      "mother_filename_hr": "records500/00000/00774_hr",
+      "mother_strat_fold": 5,
+      "mother_lead_ii_p99_p01_mV": 1.30703,
+      "sampling_frequency_hz": 500.0,
+      "signal_names": [
+        "I",
+        "II",
+        "III",
+        "AVR",
+        "AVL",
+        "AVF",
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6"
+      ],
+      "operator_recipe": {
+        "ops": [
+          "identity"
+        ],
+        "target": "normal sinus reference"
+      },
+      "closed_loop": {
+        "passed": true,
+        "criterion": "NORM 60<=HR<=100 & QRS<120 & 120<=PR<=200",
+        "measured": {
+          "criterion_values": {
+            "HR": 72.3,
+            "QRS": 51.0,
+            "PR": 148.0
+          },
+          "summary_metrics": {
+            "HR_bpm": 72.3,
+            "PR_ms": 148.0,
+            "QRS_ms": 51.0,
+            "QT_ms": 383.0,
+            "QTc_ms": 420.4,
+            "ST_Amp80ms_mV": {
+              "I": 0.059,
+              "II": 0.0715,
+              "III": 0.0125,
+              "AVR": -0.0705,
+              "AVL": 0.0305,
+              "AVF": 0.0395,
+              "V1": 0.037,
+              "V2": 0.2575,
+              "V3": 0.1945,
+              "V4": 0.1435,
+              "V5": 0.095,
+              "V6": 0.0625
+            }
+          }
+        }
+      },
+      "provenance": {
+        "operator_library": "<output_root>/train/ecg/waveform_perturb/scripts/perturb_ops.py",
+        "recipe_implementation": "<output_root>/train/ecg/waveform_perturb/scripts/test_23_stability.py",
+        "renderer": "<output_root>/train/ecg/waveform_perturb/scripts/render.py",
+        "patient_history_fabricated": false,
+        "diagnostic_title_on_image": false,
+        "source_split_policy": "PTB-XL strat_fold 1-8 only"
+      }
+    },
+    "prior_closed_loop_target_entry": {
+      "source_id": "wf_05_00774",
+      "target_number": 5,
+      "target": "SinusBrady",
+      "image": "<output_root>/train/data/ecg/runs/waveform_complex_mcq_sources_v1_20260920/images/05_SinusBrady/mother_00774.png",
+      "image_sha256": "a7d2ffef3c0c9b1bc7dd4053fad0c3b8fef90372a9114098ee727f6d9e44b07c",
+      "mother_ecg_id": "774",
+      "mother_filename_hr": "records500/00000/00774_hr",
+      "mother_strat_fold": 5,
+      "mother_lead_ii_p99_p01_mV": 1.30703,
+      "sampling_frequency_hz": 500.0,
+      "signal_names": [
+        "I",
+        "II",
+        "III",
+        "AVR",
+        "AVL",
+        "AVF",
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6"
+      ],
+      "operator_recipe": {
+        "ops": [
+          "warp_rr"
+        ],
+        "target": "sinus rate approximately 42 beats/min"
+      },
+      "closed_loop": {
+        "passed": true,
+        "criterion": "SinusBrady HR<60",
+        "measured": {
+          "criterion_values": {
+            "HR": 42.0
+          },
+          "summary_metrics": {
+            "HR_bpm": 42.0,
+            "PR_ms": 300.0,
+            "QRS_ms": 140.0,
+            "QT_ms": 510.0,
+            "QTc_ms": 426.8,
+            "ST_Amp80ms_mV": {
+              "I": -0.0561,
+              "II": -0.0982,
+              "III": -0.0342,
+              "AVR": 0.0799,
+              "AVL": -0.0098,
+              "AVF": -0.0675,
+              "V1": 0.0698,
+              "V2": 0.0906,
+              "V3": 0.0133,
+              "V4": -0.0128,
+              "V5": -0.0199,
+              "V6": -0.0275
+            }
+          }
+        }
+      },
+      "provenance": {
+        "operator_library": "<output_root>/train/ecg/waveform_perturb/scripts/perturb_ops.py",
+        "recipe_implementation": "<output_root>/train/ecg/waveform_perturb/scripts/test_23_stability.py",
+        "renderer": "<output_root>/train/ecg/waveform_perturb/scripts/render.py",
+        "patient_history_fabricated": false,
+        "diagnostic_title_on_image": false,
+        "source_split_policy": "PTB-XL strat_fold 1-8 only"
+      }
+    }
+  },
+  "operator": {
+    "name": "rr_extension_morphology_preserving",
+    "target_hr_bpm": 48.0,
+    "target_rr_ms": 1250.0,
+    "output_cycles_used": 8,
+    "full_output_cycles": 7,
+    "method": "P-QRS-T copied exactly; only the post-T/pre-P isoelectric segment is extended",
+    "edits": [
+      {
+        "source_beat_index": 1,
+        "reused_cycle": false,
+        "visible_samples": 625,
+        "full_cycle_visible": true,
+        "output_bounds_samples": {
+          "p_on": 125,
+          "visible_end": 749
+        },
+        "constructed_cycle_ms": 1250.0,
+        "visible_p_qrs_t_copy_max_abs_error_mV": 0.0
+      },
+      {
+        "source_beat_index": 2,
+        "reused_cycle": false,
+        "visible_samples": 625,
+        "full_cycle_visible": true,
+        "output_bounds_samples": {
+          "p_on": 750,
+          "visible_end": 1374
+        },
+        "constructed_cycle_ms": 1250.0,
+        "visible_p_qrs_t_copy_max_abs_error_mV": 0.0
+      },
+      {
+        "source_beat_index": 3,
+        "reused_cycle": false,
+        "visible_samples": 625,
+        "full_cycle_visible": true,
+        "output_bounds_samples": {
+          "p_on": 1375,
+          "visible_end": 1999
+        },
+        "constructed_cycle_ms": 1250.0,
+        "visible_p_qrs_t_copy_max_abs_error_mV": 0.0
+      },
+      {
+        "source_beat_index": 4,
+        "reused_cycle": false,
+        "visible_samples": 625,
+        "full_cycle_visible": true,
+        "output_bounds_samples": {
+          "p_on": 2000,
+          "visible_end": 2624
+        },
+        "constructed_cycle_ms": 1250.0,
+        "visible_p_qrs_t_copy_max_abs_error_mV": 0.0
+      },
+      {
+        "source_beat_index": 5,
+        "reused_cycle": false,
+        "visible_samples": 625,
+        "full_cycle_visible": true,
+        "output_bounds_samples": {
+          "p_on": 2625,
+          "visible_end": 3249
+        },
+        "constructed_cycle_ms": 1250.0,
+        "visible_p_qrs_t_copy_max_abs_error_mV": 0.0
+      },
+      {
+        "source_beat_index": 6,
+        "reused_cycle": false,
+        "visible_samples": 625,
+        "full_cycle_visible": true,
+        "output_bounds_samples": {
+          "p_on": 3250,
+          "visible_end": 3874
+        },
+        "constructed_cycle_ms": 1250.0,
+        "visible_p_qrs_t_copy_max_abs_error_mV": 0.0
+      },
+      {
+        "source_beat_index": 7,
+        "reused_cycle": false,
+        "visible_samples": 625,
+        "full_cycle_visible": true,
+        "output_bounds_samples": {
+          "p_on": 3875,
+          "visible_end": 4499
+        },
+        "constructed_cycle_ms": 1250.0,
+        "visible_p_qrs_t_copy_max_abs_error_mV": 0.0
+      },
+      {
+        "source_beat_index": 8,
+        "reused_cycle": false,
+        "visible_samples": 500,
+        "full_cycle_visible": false,
+        "output_bounds_samples": {
+          "p_on": 4500,
+          "visible_end": 4999
+        },
+        "constructed_cycle_ms": 1250.0,
+        "visible_p_qrs_t_copy_max_abs_error_mV": 0.0
+      }
+    ]
+  },
+  "measurements": {
+    "method": "existing deterministic ECG analyzer, rerun after perturbation with R-peak redetection",
+    "analyzer": "<output_root>/train/ecg/waveform_perturb/paper_examples/two_case_perturbation_20260924/code_snapshot/analyze.py",
+    "analyzer_sha256": "2e97e99f18e944cb668cc265e1157fecb85cc58bc646865152e1c901998e5c8b",
+    "fiducial_detector": "<output_root>/train/ecg/waveform_perturb/paper_examples/two_case_perturbation_20260924/code_snapshot/load_fiducials.py",
+    "fiducial_detector_sha256": "ecbe4d392deee07f269f80274965b493dccde31acf5522f5b2a1b7c0a63855f3",
+    "original": {
+      "HR_bpm": 72.3,
+      "PR_ms": 148.0,
+      "QRS_ms": 51.0,
+      "QT_ms": 383.0,
+      "QTc_ms": 420.4
+    },
+    "perturbed": {
+      "HR_bpm": 47.9,
+      "PR_ms": 150.0,
+      "QRS_ms": 48.0,
+      "QT_ms": 390.0,
+      "QTc_ms": 348.5
+    },
+    "detected_r_peaks_original": [
+      377,
+      740,
+      1112,
+      1530,
+      1929,
+      2319,
+      2702,
+      3117,
+      3535,
+      3967,
+      4391,
+      4809
+    ],
+    "detected_r_peaks_perturbed": [
+      208,
+      834,
+      1461,
+      2084,
+      2711,
+      3333,
+      3959,
+      4586
+    ]
+  },
+  "validation_gates": {
+    "source_is_train_split": true,
+    "source_hash_stable_during_read": true,
+    "original_normal_parameter_gate": true,
+    "target_threshold_pass": true,
+    "protected_parameter_tolerance_pass": true,
+    "engineering": {
+      "shape_preserved": true,
+      "finite": true,
+      "max_abs_mV": 1.802,
+      "clipped_fraction_at_3_5mV": 0.0,
+      "mean_abs_change_mV": 0.155344196,
+      "max_abs_change_mV": 1.929
+    },
+    "all_automated_gates_passed": true
+  },
+  "rendering": {
+    "layout": "standard 4x3 2.5-second segments plus 10-second lead-II rhythm strip",
+    "calibration": "25 mm/s, 10 mm/mV",
+    "y_range_mV": [
+      -2.0,
+      2.0
+    ],
+    "png_dpi": 600,
+    "standalone_images_do_not_contain_diagnosis_or_answer": true
+  },
+  "clinical_status": "Illustrative algorithmic counterfactual. The target parameter and engineering checks pass, but this is not a clinician-adjudicated diagnostic gold record."
+}

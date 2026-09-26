@@ -1,0 +1,12 @@
+{
+  "id": "paper_cf_774_rr_extension_morphology_preserving",
+  "parent_question_id": "distill_q_774",
+  "question": "<image>\nQuestion: 按本数据构建流程的自动闭环测量口径，看这张12导联ECG，下列哪项参数分析与结论是正确的?\nOptions:\nA: HR 72.3 bpm，PR 150.0 ms，QRS 48.0 ms，QTc 348.5 ms → 结论: 正常心率\nB: HR 47.9 bpm，PR 150.0 ms，QRS 48.0 ms，QTc 348.5 ms → 结论: 窦性心动过缓\nC: HR 47.9 bpm，PR 220.0 ms，QRS 48.0 ms，QTc 348.5 ms → 结论: 窦性心动过缓合并一度房室传导阻滞\nD: HR 47.9 bpm，PR 150.0 ms，QRS 48.0 ms，QTc 490.0 ms → 结论: 窦性心动过缓合并 QT 间期延长\nPlease reason step by step, and put your final answer within \\boxed{}.",
+  "images": [
+    "perturbed.png"
+  ],
+  "gold": "B",
+  "answer_text": "HR 47.9 bpm，PR 150.0 ms，QRS 48.0 ms，QTc 348.5 ms → 结论: 窦性心动过缓",
+  "synthesis_note": "沿用原题四选一结构，依据扰动后闭环复测值重写选项；金标由 A 翻转为 B。",
+  "label_status": "algorithmically_constructed_and_closed_loop_verified_not_clinician_adjudicated"
+}

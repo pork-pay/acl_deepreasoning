@@ -1,0 +1,12 @@
+{
+  "python": "3.10.15",
+  "platform": "Linux-5.10.134-16.3.al8.x86_64-x86_64-with-glibc2.32",
+  "packages": {
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.9",
+    "wfdb": "4.3.1",
+    "Pillow": "10.2.0",
+    "scipy": "1.15.1"
+  },
+  "gpu_used": false
+}

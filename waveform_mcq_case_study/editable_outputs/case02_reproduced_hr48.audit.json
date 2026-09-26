@@ -1,0 +1,106 @@
+{
+  "name": "rr_extension_morphology_preserving",
+  "target_hr_bpm": 48.0,
+  "target_rr_ms": 1250.0,
+  "output_cycles_used": 8,
+  "full_output_cycles": 7,
+  "method": "P-QRS-T copied exactly; only post-T/pre-P TP rest extended",
+  "edits": [
+    {
+      "source_beat_index": 1,
+      "reused_cycle": false,
+      "visible_samples": 625,
+      "full_cycle_visible": true,
+      "output_bounds_samples": {
+        "p_on": 125,
+        "visible_end": 749
+      },
+      "constructed_cycle_ms": 1250.0,
+      "visible_p_qrs_t_copy_max_abs_error_mV": 0.0
+    },
+    {
+      "source_beat_index": 2,
+      "reused_cycle": false,
+      "visible_samples": 625,
+      "full_cycle_visible": true,
+      "output_bounds_samples": {
+        "p_on": 750,
+        "visible_end": 1374
+      },
+      "constructed_cycle_ms": 1250.0,
+      "visible_p_qrs_t_copy_max_abs_error_mV": 0.0
+    },
+    {
+      "source_beat_index": 3,
+      "reused_cycle": false,
+      "visible_samples": 625,
+      "full_cycle_visible": true,
+      "output_bounds_samples": {
+        "p_on": 1375,
+        "visible_end": 1999
+      },
+      "constructed_cycle_ms": 1250.0,
+      "visible_p_qrs_t_copy_max_abs_error_mV": 0.0
+    },
+    {
+      "source_beat_index": 4,
+      "reused_cycle": false,
+      "visible_samples": 625,
+      "full_cycle_visible": true,
+      "output_bounds_samples": {
+        "p_on": 2000,
+        "visible_end": 2624
+      },
+      "constructed_cycle_ms": 1250.0,
+      "visible_p_qrs_t_copy_max_abs_error_mV": 0.0
+    },
+    {
+      "source_beat_index": 5,
+      "reused_cycle": false,
+      "visible_samples": 625,
+      "full_cycle_visible": true,
+      "output_bounds_samples": {
+        "p_on": 2625,
+        "visible_end": 3249
+      },
+      "constructed_cycle_ms": 1250.0,
+      "visible_p_qrs_t_copy_max_abs_error_mV": 0.0
+    },
+    {
+      "source_beat_index": 6,
+      "reused_cycle": false,
+      "visible_samples": 625,
+      "full_cycle_visible": true,
+      "output_bounds_samples": {
+        "p_on": 3250,
+        "visible_end": 3874
+      },
+      "constructed_cycle_ms": 1250.0,
+      "visible_p_qrs_t_copy_max_abs_error_mV": 0.0
+    },
+    {
+      "source_beat_index": 7,
+      "reused_cycle": false,
+      "visible_samples": 625,
+      "full_cycle_visible": true,
+      "output_bounds_samples": {
+        "p_on": 3875,
+        "visible_end": 4499
+      },
+      "constructed_cycle_ms": 1250.0,
+      "visible_p_qrs_t_copy_max_abs_error_mV": 0.0
+    },
+    {
+      "source_beat_index": 8,
+      "reused_cycle": false,
+      "visible_samples": 500,
+      "full_cycle_visible": false,
+      "output_bounds_samples": {
+        "p_on": 4500,
+        "visible_end": 4999
+      },
+      "constructed_cycle_ms": 1250.0,
+      "visible_p_qrs_t_copy_max_abs_error_mV": 0.0
+    }
+  ]
+}

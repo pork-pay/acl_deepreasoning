@@ -1,0 +1,287 @@
+{
+  "created_at_utc": "2026-09-24T03:48:02.115774+00:00",
+  "root": "<output_root>/train/ecg/waveform_perturb/paper_examples/two_case_perturbation_20260924",
+  "cases": 2,
+  "source_policy": "PTB-XL records and source question images were read-only; every output is under tongzhou",
+  "rendering": {
+    "png_dpi": 600,
+    "pdf": "vector",
+    "layout": "4x3 plus rhythm strip for standalone ECGs"
+  },
+  "validation": "all automated gates passed",
+  "clinical_label_status": "algorithmic counterfactual; not clinician-adjudicated",
+  "manifest_excludes_itself": true,
+  "files": [
+    {
+      "path": "ENVIRONMENT.json",
+      "bytes": 255,
+      "sha256": "a52f9fe0e261f6ebc37cdc6c0e697a749616c4d0310d8156e650e52df9f56e79"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2724,
+      "sha256": "37da2ee4f1eae15dba96b8a10f06fcc9d2f11fafd5a267759a10f0c482054c02"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 480,
+      "sha256": "3608d261e69075ccda36a4082fb8474cd8d8c2ab5853de4ca1f1ae6b92297693"
+    },
+    {
+      "path": "caption_zh_en.md",
+      "bytes": 915,
+      "sha256": "72a3ed9a7efca04e0a5ebf3354941bf413da8c9a5ecf75fd359142fe93a54b2d"
+    },
+    {
+      "path": "case_01_pr_prolongation/audit.json",
+      "bytes": 11448,
+      "sha256": "95ab342a05830c16a3a412f3b6006772bb55d773120d5dc12a365795bb239de1"
+    },
+    {
+      "path": "case_01_pr_prolongation/comparison.pdf",
+      "bytes": 108581,
+      "sha256": "761a3df675ef9f2cf97dcd12d3cdec1b4c9fdaba96809f9ef4ebd4b90aaac77d"
+    },
+    {
+      "path": "case_01_pr_prolongation/comparison.png",
+      "bytes": 1060062,
+      "sha256": "abccf7a8c6bbfa49b6afa8b5ff670cc40d92e6a8c83dda0d2fbe3175ca1b5c29",
+      "image": {
+        "width_px": 9600,
+        "height_px": 5520,
+        "mode": "RGB",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      }
+    },
+    {
+      "path": "case_01_pr_prolongation/original.pdf",
+      "bytes": 86316,
+      "sha256": "73f1addb7a79e50647ac33324e154b558cf2d07c31854f972d0c5696b4e03193"
+    },
+    {
+      "path": "case_01_pr_prolongation/original.png",
+      "bytes": 1066208,
+      "sha256": "e0a15dfff989e342c2b4527ae295c1df0fb0f3582f74650165d3d947e7dfca12",
+      "image": {
+        "width_px": 9600,
+        "height_px": 6000,
+        "mode": "RGB",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      }
+    },
+    {
+      "path": "case_01_pr_prolongation/original_question.json",
+      "bytes": 1683,
+      "sha256": "a0609c82206419853e134fb653adaf807de4a97f531d3efea8d310c19dc60e05"
+    },
+    {
+      "path": "case_01_pr_prolongation/original_question.md",
+      "bytes": 1106,
+      "sha256": "3191cd0eba3be41ff41ef7ac0c70677240353c9354def99301e9765b409aafc5"
+    },
+    {
+      "path": "case_01_pr_prolongation/perturbed.pdf",
+      "bytes": 85525,
+      "sha256": "4a7d752ea191c118a1d20375b5151f56ff5bc559ce48639bf291a968e829cc76"
+    },
+    {
+      "path": "case_01_pr_prolongation/perturbed.png",
+      "bytes": 1079480,
+      "sha256": "b95bec0acc251e068205adb44aae1a6cf00b94cd030d8fd44e1f7d2ac779bb67",
+      "image": {
+        "width_px": 9600,
+        "height_px": 6000,
+        "mode": "RGB",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      }
+    },
+    {
+      "path": "case_01_pr_prolongation/signal_original.npz",
+      "bytes": 86821,
+      "sha256": "ca156e0c82d4387d26221442f6cfa5e3244510fccef464b7de55a6f97b630314"
+    },
+    {
+      "path": "case_01_pr_prolongation/signal_perturbed.npz",
+      "bytes": 153127,
+      "sha256": "5c2480fa1bd9656ce262c9c55861a31b6bc279256d0e48e787910944b6bedd4a"
+    },
+    {
+      "path": "case_01_pr_prolongation/source_original.png",
+      "bytes": 106714,
+      "sha256": "8bb9ff9942297662ded7130a13043292696033d8de13f15b89fcf4cd1c277380",
+      "image": {
+        "width_px": 1397,
+        "height_px": 1029,
+        "mode": "RGBA",
+        "dpi": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "path": "case_01_pr_prolongation/synthesized_question.json",
+      "bytes": 1179,
+      "sha256": "5c0a356610cb91d7acd7821208953d418a7b09bfce15b0965750753997c083bb"
+    },
+    {
+      "path": "case_01_pr_prolongation/synthesized_question.md",
+      "bytes": 912,
+      "sha256": "0b812a913ca48e9a5ac456449d30a4d43252daa1d3e25c438382e755a1dce9b6"
+    },
+    {
+      "path": "case_02_rate_slowing/audit.json",
+      "bytes": 10287,
+      "sha256": "9f025ab25525123a172b8f50a4893395763dad4860cb8972aacc0f19e95eb24c"
+    },
+    {
+      "path": "case_02_rate_slowing/comparison.pdf",
+      "bytes": 110020,
+      "sha256": "4278712b5d8324e74912e8ab21303b6005413cb4ddff68fc2716bf82efd50396"
+    },
+    {
+      "path": "case_02_rate_slowing/comparison.png",
+      "bytes": 1090404,
+      "sha256": "78c01bec9cf756416f7a3ff1cb7df3782d9698019a790bf58911ffceb48dfea4",
+      "image": {
+        "width_px": 9600,
+        "height_px": 5520,
+        "mode": "RGB",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      }
+    },
+    {
+      "path": "case_02_rate_slowing/original.pdf",
+      "bytes": 85209,
+      "sha256": "946849b88b9a279969ded584f3d80afed739ad7b8eeaf500f51e60788b525009"
+    },
+    {
+      "path": "case_02_rate_slowing/original.png",
+      "bytes": 1079078,
+      "sha256": "04e0abbbf052478a5088d919399f4ed2db97677c3efdab554ecb557b7e186cb9",
+      "image": {
+        "width_px": 9600,
+        "height_px": 6000,
+        "mode": "RGB",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      }
+    },
+    {
+      "path": "case_02_rate_slowing/original_question.json",
+      "bytes": 1549,
+      "sha256": "2ffd2206b7f8f297823dd6fae7eaaee906cf133d1f219ee929018f3243649ec6"
+    },
+    {
+      "path": "case_02_rate_slowing/original_question.md",
+      "bytes": 968,
+      "sha256": "cada0253a19f8fb2b79be408edd11159c93fef7981b528c4a36636f76d8a75f1"
+    },
+    {
+      "path": "case_02_rate_slowing/perturbed.pdf",
+      "bytes": 69826,
+      "sha256": "87c325d118d1426a1680fa50ed1d51bece87a9b335ab5ba478431a10cda77c87"
+    },
+    {
+      "path": "case_02_rate_slowing/perturbed.png",
+      "bytes": 867477,
+      "sha256": "22a213a06b12583b023fd00c6626cc7c067c3da9f1f9c84599c7466089930093",
+      "image": {
+        "width_px": 9600,
+        "height_px": 6000,
+        "mode": "RGB",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      }
+    },
+    {
+      "path": "case_02_rate_slowing/signal_original.npz",
+      "bytes": 84931,
+      "sha256": "14f7bb6304e988d1494298eb24e7ca80f2be09af61b07c1a4e10d6b678a5d730"
+    },
+    {
+      "path": "case_02_rate_slowing/signal_perturbed.npz",
+      "bytes": 135102,
+      "sha256": "618caab7bb887cf49f3784d6dc14555c094545506edb4905b51750b2395384f8"
+    },
+    {
+      "path": "case_02_rate_slowing/source_original.png",
+      "bytes": 111254,
+      "sha256": "8c3e0afcab5089a6e93ca17099ceb2218ac17580a27171fb7b6861746c9d4416",
+      "image": {
+        "width_px": 1397,
+        "height_px": 1029,
+        "mode": "RGBA",
+        "dpi": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "path": "case_02_rate_slowing/synthesized_question.json",
+      "bytes": 1137,
+      "sha256": "022c4d945166ddbc3116b2da7888a6ebbfad4075b96493248dd2bd6d5d65c972"
+    },
+    {
+      "path": "case_02_rate_slowing/synthesized_question.md",
+      "bytes": 873,
+      "sha256": "6685e47e9bc7d2e9833528bdb148b025d92c1f2ca32320fa64f0f78c70712a8c"
+    },
+    {
+      "path": "code_snapshot/analyze.py",
+      "bytes": 3636,
+      "sha256": "2e97e99f18e944cb668cc265e1157fecb85cc58bc646865152e1c901998e5c8b"
+    },
+    {
+      "path": "code_snapshot/load_fiducials.py",
+      "bytes": 6076,
+      "sha256": "ecbe4d392deee07f269f80274965b493dccde31acf5522f5b2a1b7c0a63855f3"
+    },
+    {
+      "path": "paper_panel_2cases.pdf",
+      "bytes": 165582,
+      "sha256": "025d0408594b1b8fe509598d31a0afcf3f337d23b9dec322cd16bdc9e8aeaf35"
+    },
+    {
+      "path": "paper_panel_2cases.png",
+      "bytes": 1563399,
+      "sha256": "d398a63fb782d444979e8bc8684d4cc76617d53fa845e1534c80a02fbecd0ada",
+      "image": {
+        "width_px": 9600,
+        "height_px": 6360,
+        "mode": "RGB",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      }
+    },
+    {
+      "path": "questions_all.jsonl",
+      "bytes": 5446,
+      "sha256": "9c9bfd68229f2e58ee4124cdcd77826f00be1d39dbe35aeac3ac65160654d8cf"
+    },
+    {
+      "path": "render_paper_examples.py",
+      "bytes": 40743,
+      "sha256": "28d21867ecb59b86ac713b47b42f98f58ce276eb5dc78e593956dc9798a250d3"
+    }
+  ]
+}

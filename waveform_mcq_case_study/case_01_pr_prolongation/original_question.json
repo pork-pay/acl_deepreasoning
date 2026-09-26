@@ -1,0 +1,23 @@
+{
+  "id": "distill_q_439",
+  "question": "<image>\nQuestion: 看这张12导联ECG,下列哪项参数分析与诊断是正确的?\nOptions:\nA: HR 75.0 bpm（窦性节律），PR 146.0 ms，QRS 90.0 ms，QTc 433.0 ms，电轴12SL=59.0°/unig=60.0°（正常） → 诊断: 正常心电图、窦性心律\nB: HR 45.0 bpm（窦性节律、心率过缓），PR 146.0 ms，QRS 90.0 ms，QTc 433.0 ms，电轴12SL=59.0°/unig=60.0°（正常） → 诊断: 窦性心动过缓\nC: HR 75.0 bpm（窦性节律），PR 220.0 ms（延长），QRS 90.0 ms，QTc 433.0 ms，电轴12SL=59.0°/unig=60.0°（正常） → 诊断: 一度房室传导阻滞\nD: HR 75.0 bpm（窦性节律），PR 146.0 ms，QRS 130.0 ms（增宽），QTc 433.0 ms，电轴12SL=59.0°/unig=60.0°（正常） → 诊断: 室内传导阻滞\nPlease reason step by step, and put your final answer within \\boxed{}.",
+  "images": [
+    "source_original.png"
+  ],
+  "gold": "A",
+  "answer_text": "HR 75.0 bpm（窦性节律），PR 146.0 ms，QRS 90.0 ms，QTc 433.0 ms，电轴12SL=59.0°/unig=60.0°（正常） → 诊断: 正常心电图、窦性心律",
+  "answer_diagnosis": "正常心电图、窦性心律",
+  "label_status": "dataset_provided_annotation",
+  "provenance": {
+    "id": "distill_q_439",
+    "ecg_id": 439,
+    "patient_id": "1419",
+    "strat_fold": 7,
+    "split": "train",
+    "source_image": "<genecg_source>/Dataset_A_ECGs_without_imperfections/00000/00439_hr_1R.png",
+    "source_waveform": "<ptbxl_download>/physionet.org/files/ptb-xl/1.0.3/records500/00000/00439_hr",
+    "waveform_resolution": "500Hz",
+    "source": "PTB-XL/PTB-XL-Plus",
+    "question_variant": "balanced_four_option"
+  }
+}
