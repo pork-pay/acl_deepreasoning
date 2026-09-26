@@ -17,3 +17,11 @@ Reproducible two-case **ECG waveform perturbation → closed-loop remeasurement 
 - `end_to_end/` — the full waveform→MCQ→CoT pipeline figure + the two actual Qwen3.8 thinking-CoT SFT samples.
 - `paper_panel_2cases.{pdf,png}` — the two-case figure for the paper.
 - Internal absolute paths were redacted for the public repo; `MANIFEST.json`/`BUNDLE_SHA256SUMS.txt` were recomputed so integrity still verifies (`sha256sum -c BUNDLE_SHA256SUMS.txt`). See [`waveform_mcq_case_study/README.md`](waveform_mcq_case_study/README.md) + [`waveform_mcq_case_study/REDACTION_NOTICE.md`](waveform_mcq_case_study/REDACTION_NOTICE.md).
+
+## complex_waveform_mcq_cot/
+Two non-simplified full **ECG multi-option MCQ + complete distilled Qwen3.8 thinking-CoT** cases from validated historical waveform perturbations:
+- Case 1 — First-degree AV block (5 options, **gold A**, full 26,441-char CoT, integrated interpretation).
+- Case 2 — Right bundle branch block (5 options, **gold C**, full 19,614-char CoT, mechanism localization).
+- `MCQ_COT_PROMPTS_REVIEW.md` — each exact image + exact MCQ prompt + complete accepted CoT (the place to start).
+- `selected_complex_cases_2.jsonl` — the two original SFT rows (unshortened). `paper_complex_mcq_cot_2cases.{pdf,png}` — compact figure.
+- Internal image paths in the JSONL were redacted for the public repo; `SHA256SUMS.txt` was recomputed (`sha256sum -c` 8/8 OK). See [`complex_waveform_mcq_cot/README.md`](complex_waveform_mcq_cot/README.md) + [`complex_waveform_mcq_cot/REDACTION_NOTICE.md`](complex_waveform_mcq_cot/REDACTION_NOTICE.md).
